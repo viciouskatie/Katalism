@@ -14,9 +14,8 @@ class SubmissionsTest < ApplicationSystemTestCase
     visit submissions_url
     click_on "New Submission"
 
-    fill_in "Body", with: @submission.body
+    fill_in "Description", with: @submission.description
     fill_in "Title", with: @submission.title
-    fill_in "Url", with: @submission.url
     click_on "Create Submission"
 
     assert_text "Submission was successfully created"
@@ -27,9 +26,8 @@ class SubmissionsTest < ApplicationSystemTestCase
     visit submissions_url
     click_on "Edit", match: :first
 
-    fill_in "Body", with: @submission.body
+    fill_in "Description", with: @submission.description
     fill_in "Title", with: @submission.title
-    fill_in "Url", with: @submission.url
     click_on "Update Submission"
 
     assert_text "Submission was successfully updated"

@@ -17,8 +17,7 @@ ActiveRecord::Schema.define(version: 2020_12_18_201522) do
 
   create_table "submissions", force: :cascade do |t|
     t.string "title"
-    t.text "body"
-    t.string "url"
+    t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
