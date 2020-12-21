@@ -27,7 +27,7 @@
         <div class="w-full flex flex-wrap flex-1 items-center justify-end pt-4 lg:pt-0">
           <div>
             <% if user_signed_in? %>
-            <%= link_to destroy_user_session_path, class: "hover:bg-purple-500 hover:text-white text-gray-700 no-underline block py-2 px-4 flex items-center text-sm" do %>
+            <%= link_to destroy_user_session_path, method: :delete, class: "hover:bg-purple-500 hover:text-white text-gray-700 no-underline block py-2 px-4 flex items-center text-sm" do %>
               Sign Out
              <% end %>
                 <%= link_to new_submission_path do %>
