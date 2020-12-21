@@ -4,7 +4,7 @@ class SubmissionsController < ApplicationController
   # GET /submissions
   # GET /submissions.json
   def index
-    @submissions = Submission.all
+    @submissions = current_user.submissions
   end
 
   # GET /submissions/1
@@ -25,6 +25,7 @@ class SubmissionsController < ApplicationController
   # POST /submissions.json
   def create
     @submission = Submission.new(submission_params)
+    @submission.user = current_user
 
     respond_to do |format|
       if @submission.save
@@ -64,7 +65,7 @@ class SubmissionsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_submission
-      @submission = Submission.find(params[:id])
+      @submission = current_user.submissions.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
