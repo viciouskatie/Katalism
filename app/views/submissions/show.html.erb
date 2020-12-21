@@ -1,13 +1,14 @@
-<p>
-  <strong>Title:</strong>
-  <%= @submission.title %>
-</p>
+<div class="flex flex-wrap items-center justify-center text-lg bg-gray-100 mt-4">
 
-<p>
-  <strong>Description:</strong>
+<p class="mt-5 mb-5">
+  Title:
+  <%= @submission.title %>
+<br>
+  Description:
   <%= @submission.description %>
 </p>
-
-
+</div>
+<div>
 <%= link_to 'Edit', edit_submission_path(@submission) %> |
 <%= link_to 'Back', submissions_path %>
+</div>
