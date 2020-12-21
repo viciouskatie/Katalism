@@ -1,25 +1,21 @@
-<h1>Submissions</h1>
+<br>
+<h1 class="flex flex-wrap items-center justify-center text-lg font-bold">Todos</h1>
+<br>
+<div class="bg-gray-100">
 
-<table>
-  <thead>
-    <tr>
-      <th>Title:</th>
-      <th>Description:</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
+<div>
   <tbody>
     <% @submissions.each do |submission| %>
-      <tr>
-        <td><%= submission.title %></td>
+      <tr><pre>
+        <input type="checkbox"><td><%= submission.title %></td>
         <td><%= submission.description %></td>
         <td><%= link_to 'Show', submission %></td>
         <td><%= link_to 'Edit', edit_submission_path(submission) %></td>
         <td><%= link_to 'Destroy', submission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </tr></pre>
     <% end %>
+    </div>
   </tbody>
-</table>
+</div>
 
 <%= link_to 'New Submission', new_submission_path %>
