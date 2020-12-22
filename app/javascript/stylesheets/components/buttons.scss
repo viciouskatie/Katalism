@@ -8,36 +8,28 @@
 }
 
 .btn-blue {
-    @apply bg-blue-600 text-white;
+    @apply bg-blue-500 text-white;
 }
 
 .btn-blue:hover {
     @apply bg-blue-700;
 }
 
-.btn-gray {
-    @apply bg-gray-500 text-white;
-}
 
-.btn-gray:hover {
-    @apply bg-gray-700;
-}
-
-.btn-blue:active,
-.btn-gray:active {
+.btn-blue:active {
     @apply text-white;
 }
 
 .btn_outline {
-    @apply text-white border border-gray-400;
+    @apply text-white border border-blue-400;
 }
 
 .btn_outline:hover {
-    @apply text-white text-white border-gray-400;
+    @apply text-white border-blue-400;
 }
 
 .btn-white {
-    @apply bg-white text-white py-2 px-4 border border-gray-400 rounded shadow;
+    @apply bg-white text-gray-100 py-2 px-4 border border-gray-400 rounded shadow;
 }
 
 .btn-white:hover{
@@ -48,11 +40,11 @@
     @apply no-underline;
 }
 
-.link-grey {
+.link-gray {
     @apply text-gray-600;
 }
 
-.link-grey:hover {
+.link-gray:hover {
     @apply text-gray-700;
 }
 
