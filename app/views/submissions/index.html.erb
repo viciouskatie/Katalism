@@ -1,22 +1,27 @@
 <br>
 <h1 class="flex flex-wrap items-center justify-center text-lg font-bold mb-4">Todos</h1>
 <div class="mx-auto" style="width: 500px">
-<div>
-  <tbody>
-    <% @submissions.each do |submission| %>
-    <div class="border">
-      <tr>
-      <pre class="ml-14 mr-14 mb-3">
-        <input type="checkbox"><td><%= submission.title %></td>
-        <td><%= submission.description %></td>
-        <td><%= link_to 'Show', submission %></td>
-        <td><%= link_to 'Edit', edit_submission_path(submission) %></td>
-        <td><%= link_to 'Destroy', submission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr></pre>
-    <% end %>
+    <div>
+        <div>
+            <% @submissions.each do |submission| %>
+            <div class="bg-white flex space-x-6 ml-14 mr-14 mb-3 transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
+                <div class="flex-initial">
+                    <input type="checkbox" />
+                </div>
+                <div class="flex-2 justify-start">
+                    <p><%= submission.title %></p>
+                    <p><%= submission.description %></p>
+                </div>
+                <div class="flex-1 justify-end">
+                    <p><%= link_to 'Show', submission %></p>
+                    <p><%= link_to 'Edit', edit_submission_path(submission) %></p>
+                    <p><%= link_to 'Destroy', submission, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+                </div>
+            </div>
+
+            <% end %>
+        </div>
     </div>
-  </tbody>
-  </div>
 </div>
 
 <%= link_to 'New Submission', new_submission_path %>

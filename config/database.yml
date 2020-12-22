@@ -23,5 +23,10 @@ test:
   database: todo-test
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  url: <%= ENV['DATABASE_URL'] %>
+  username: prod
+  password: password
   database: todo-prod
