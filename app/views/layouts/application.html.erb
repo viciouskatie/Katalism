@@ -14,11 +14,11 @@
 
   <body class="bg-gray-200 mx-auto mt-0">
 
-    <nav class="bg-blue-300 py-2 border-b border-blue-300" role="navigation" aria-label="main navigation">
+    <nav class="bg-teal-600 py-2 border-b border-teal-600" role="navigation" aria-label="main navigation">
       <div class="flex flex-wrap items-center justify-center mx-auto lg:justify-start lg:content-center px-4 lg:px-6">
     
       <%= link_to root_path, class: "leading-normal no-underline my-2 md:my-0" do %>
-        <h1 class="text-lg pr-2 text-gray-100">Awesome Todos</h1>
+        <h1 class="text-lg pr-2 text-white">Awesome Todos</h1>
       <% end %>
 
       <div class="flex flex-wrap justify-start w-full lg:w-2/3">
@@ -27,7 +27,7 @@
         <div class="w-full flex flex-wrap flex-1 items-center justify-end pt-4 lg:pt-0">
           <div>
             <% if user_signed_in? %>
-            <%= link_to destroy_user_session_path, method: :delete, class: "hover:bg-purple-500 hover:text-white text-gray-700 no-underline block py-2 px-4 flex items-center text-sm" do %>
+            <%= link_to destroy_user_session_path, method: :delete, class: "bg-teal-600 text-white hover:bg-blue-500 hover:text-white text-white no-underline block py-2 px-4 flex items-center text-sm" do %>
               Sign Out
              <% end %>
                 <%= link_to new_submission_path do %>
@@ -40,9 +40,9 @@
 
 
           <% if user_signed_in? %>
-              <div class="dropdown rounded bg-white border border-gray-400 text-gray-600 ml-1 hover:bg-gray-200">
+              <div class="dropdown rounded bg-white border border-gray-400 text-white ml-1 hover:bg-gray-200">
                 <div class="dropdown-content pt-2 pb-2 pl-3 pr-1">
-                <%= link_to "#", class: "js-dropdown-user-target no-underline flex justify-between text-gray-700 uppercase text-xs tracking-wide items-center font-semibold" do %>
+                <%= link_to "#", class: "js-dropdown-user-target no-underline flex justify-between text-white uppercase text-xs tracking-wide items-center font-semibold" do %>
                   <%= current_user.email if current_user.email %>
                 <% end %>
 
@@ -50,12 +50,12 @@
                 <h5 class-="mt-2 uppercase text-xs text-gray- font-normal py-2 pl-3 tracking-wide">My Stuff</h5>
 
                 <li>
-                   <%= link_to "#", class: "hover:bg-purple-500 hover:text-white text-gray-700 no-underline block py-2 px-4 flex items-center text-sm" do %>
+                   <%= link_to "#", class: "hover:bg-teal-500 hover:text-white text-white no-underline block py-2 px-4 flex items-center text-sm" do %>
                  <% end %>
                 </li>
 
                 <li>
-                   <%= link_to edit_user_registration_path, class: "hover:bg-purple-500 hover:text-white text-gray-700 no-underline block py-2 px-4 flex items-center text-sm" do %>
+                   <%= link_to edit_user_registration_path, class: "hover:bg-teal-500 hover:text-white text-white no-underline block py-2 px-4 flex items-center text-sm" do %>
                   <% end %>
                 </li>
                </ul> 

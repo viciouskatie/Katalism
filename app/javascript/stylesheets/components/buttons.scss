@@ -1,0 +1,65 @@
+
+.btn {
+    @apply font-semibold text-lg py-3 px-6 rounded cursor-pointer no-underline;
+}
+
+.btn-small {
+    @apply font-bold py-2 px-4 rounded text-sm;
+}
+
+.btn-blue {
+    @apply bg-blue-600 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.btn-gray {
+    @apply bg-gray-500 text-white;
+}
+
+.btn-gray:hover {
+    @apply bg-gray-700;
+}
+
+.btn-blue:active,
+.btn-gray:active {
+    @apply text-white;
+}
+
+.btn_outline {
+    @apply text-white border border-gray-400;
+}
+
+.btn_outline:hover {
+    @apply text-white text-white border-gray-400;
+}
+
+.btn-white {
+    @apply bg-white text-white py-2 px-4 border border-gray-400 rounded shadow;
+}
+
+.btn-white:hover{
+    @apply bg-white;
+}
+
+.link {
+    @apply no-underline;
+}
+
+.link-grey {
+    @apply text-gray-600;
+}
+
+.link-grey:hover {
+    @apply text-gray-700;
+}
+
+.link-blue {
+    @apply text-blue-600;
+}
+
+.link-blue:hover {
+    @apply text-blue-800;
+}
