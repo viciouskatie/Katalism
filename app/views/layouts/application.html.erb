@@ -40,9 +40,9 @@
 
 
           <% if user_signed_in? %>
-              <div class="dropdown rounded bg-white border border-gray-400 text-white ml-1 hover:bg-gray-200">
+              <div class="dropdown btn-blue rounded ml-1">
                 <div class="dropdown-content pt-2 pb-2 pl-3 pr-1">
-                <%= link_to "#", class: "js-dropdown-user-target no-underline flex justify-between text-white uppercase text-xs tracking-wide items-center font-semibold" do %>
+                <%= link_to "#", class: "js-dropdown-user-target no-underline btn-blue flex justify-between text-white uppercase text-xs tracking-wide items-center font-semibold" do %>
                   <%= current_user.email if current_user.email %>
                 <% end %>
 
