@@ -15,17 +15,25 @@
     @apply bg-blue-700;
 }
 
+.btn-teal {
+    @apply bg-teal-600 border border-white text-white;
+}
+
+.btn-teal:hover {
+    @apply bg-blue-500;
+}
+
 
 .btn-blue:active {
     @apply text-white;
 }
 
 .btn_outline {
-    @apply text-white border border-blue-400;
+    @apply text-white border border-white;
 }
 
 .btn_outline:hover {
-    @apply text-white border-blue-400;
+    @apply text-gray-100 border-blue-500;
 }
 
 .btn-white {
