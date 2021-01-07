@@ -1,5 +1,5 @@
 {
-  "name": "todo_app",
+  "name": "katalism",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
