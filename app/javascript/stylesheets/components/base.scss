@@ -12,7 +12,7 @@ a:active {
 .heading {
     @apply font-sans font-medium text-gray-800;
 }
-#main-doc{
+.main-doc{
     height:100%;
     width:100%;
   }
@@ -22,14 +22,14 @@ a:active {
     margin-top:10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.7);
   }
-  #navbar{
+  .navbar{
     position: fixed;
     width:300px;
     height:100%;
     background-color: rgb(248, 209, 243);
     text-align:center;
   }
-  #technical-doc-writing{
+  .technical-doc-writing{
     width:80%;
     margin:auto;
     min-width:600px;
